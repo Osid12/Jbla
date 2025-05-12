@@ -1,0 +1,58 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart - MyShop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">MyShop</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-container"></div>
+    <a href="checkout.html" id="checkout-button">Proceed to Checkout</a>
+  </section>
+  
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="cart.js"></script>
+</body>
+</html>
+
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - MyShop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">MyShop</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section class="checkout-section">
+    <h2>Order Summary</h2>
+    <div id="checkout-container"></div>
+  </section>
+  
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="cart.js"></script>
+</body>
+</html>

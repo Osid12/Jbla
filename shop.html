@@ -1,0 +1,46 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shop - MyShop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">MyShop</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section class="product-upload">
+    <h2>Add a Product</h2>
+    <form id="product-form">
+      <label>Product Name:</label>
+      <input type="text" id="product-name" required>
+      <label>Image URL:</label>
+      <input type="url" id="product-image" required>
+      <label>Price:</label>
+      <input type="number" id="product-price" required>
+      <label>Category:</label>
+      <input type="text" id="product-category" required>
+      <label>Description:</label>
+      <textarea id="product-description" required></textarea>
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+  <section class="product-list">
+    <h2>Products</h2>
+    <div id="products-container"></div>
+  </section>
+  
+  <!-- Include Firebase config (not used here but kept for consistency) and product/cart scripts -->
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="products.js"></script>
+  <script type="module" src="cart.js"></script>
+</body>
+</html>
